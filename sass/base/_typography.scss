@@ -1,0 +1,22 @@
+.paragraph {
+  color: var(--text-paragraph);
+  font-size: 26px;
+  font-style: normal;
+  letter-spacing: 1px;
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-small {
+    font-size: 24px;
+  }
+
+  &-med {
+    font-size: 28px;
+  }
+
+  &-big {
+    font-size: 30px;
+  }
+}
