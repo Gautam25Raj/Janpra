@@ -1,12 +1,13 @@
-.container {
-  width: 94%;
-}
-
 .grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   grid-column-gap: 20px;
   grid-row-gap: 0px;
+}
+
+.container {
+  width: 94%;
+  grid-template-rows: repeat(5, auto);
 }

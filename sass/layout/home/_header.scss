@@ -1,0 +1,45 @@
+.header {
+  grid-template-rows: auto auto;
+  background-color: var(--background-main);
+  grid-column: 1/13;
+}
+
+.home_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_main {
+    grid-column: 1/8;
+  }
+
+  &-logo {
+    height: 150px;
+  }
+}
+
+.header-heading {
+  grid-column: 2/7;
+
+  p {
+    margin-bottom: 72px;
+  }
+
+  button {
+    margin-bottom: 54px;
+  }
+}
+
+.header-image {
+  grid-column: 8/13;
+  grid-row: 1/3;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  img {
+    width: 100%;
+    position: absolute;
+    bottom: -6px;
+  }
+}

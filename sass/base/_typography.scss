@@ -1,3 +1,10 @@
+.head {
+  &-h1 {
+    font-size: 72px;
+    margin: 115px 0 30px;
+  }
+}
+
 .paragraph {
   color: var(--text-paragraph);
   font-size: 26px;

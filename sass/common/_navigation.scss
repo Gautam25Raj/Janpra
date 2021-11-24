@@ -1,0 +1,38 @@
+.nav_main {
+  width: 100%;
+  background-color: var(--background-main);
+}
+
+.nav {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-logo {
+    width: 430px;
+  }
+
+  &_container {
+    display: flex;
+  }
+
+  &_list {
+    position: relative;
+  }
+
+  &_list:hover::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-paragraph);
+  }
+
+  &_list:not(:last-child) {
+    margin-right: 60px;
+  }
+}
