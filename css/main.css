@@ -1,37 +1,60 @@
-.header {
+.a {
+  grid-column: 1/13;
   grid-template-rows: auto auto;
-  background-color: var(--background-main);
-  grid-column: 1/13; }
+  background-color: var(--background-main); }
 
 .home_nav {
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .home_nav_main {
-    grid-column: 1/8; }
+    grid-column: 2/8; }
   .home_nav-logo {
-    height: 150px; }
+    height: 150px;
+    margin-top: 40px; }
 
 .header-heading {
-  grid-column: 2/7; }
+  grid-column: 3/8; }
   .header-heading p {
-    margin-bottom: 72px; }
+    margin-bottom: 72px;
+    max-width: 465px; }
   .header-heading button {
     margin-bottom: 54px; }
 
 .header-image {
   grid-column: 8/13;
-  grid-row: 1/3;
-  display: flex;
-  align-items: flex-end;
-  position: relative; }
+  grid-row: 1/3; }
   .header-image img {
-    width: 100%;
-    position: absolute;
-    bottom: -6px; }
+    width: 100%; }
 
 .main {
-  grid-column: 1/12; }
+  grid-column: 2/12;
+  grid-row: 2/5; }
+
+.color {
+  grid-column: 1/13;
+  z-index: -1;
+  background-color: var(--background-main); }
+  .color-1 {
+    grid-row: 2/3; }
+  .color-2 {
+    grid-row: 4/5; }
 
 .about {
-  border-radius: 50px; }
+  border-radius: 50px;
+  padding: 60px 80px;
+  background-image: linear-gradient(rgba(251, 255, 242, 0.9) 100%, rgba(251, 255, 242, 0.9) 100%), url(../../../img/home/medicine-background.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .about-head {
+    margin: 0 0 50px 50px; }
+  .about_details {
+    display: flex;
+    justify-content: space-between; }
+    .about_details_container {
+      margin-left: 135px; }
+    .about_details-paragraph {
+      line-height: 36px; }
+  .about-btn {
+    margin-top: 60px; }

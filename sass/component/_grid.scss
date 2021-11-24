@@ -2,12 +2,23 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
   grid-column-gap: 20px;
   grid-row-gap: 0px;
 }
 
-.container {
-  width: 94%;
-  grid-template-rows: repeat(5, auto);
+.body {
+  grid-template-rows: auto 145px auto 145px auto;
 }
+
+.footer {
+  grid-template-rows: auto;
+}
+
+// .container {
+//   width: 94%;
+//   grid-template-rows: repeat(5, auto);
+// }
+
+// .main {
+//   grid-template-rows: 145px auto 145px;
+// }

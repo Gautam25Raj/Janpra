@@ -1,7 +1,8 @@
 .social {
-  width: 6%;
-  height: 100vh;
-  background-color: var(--background-main);
+  // height: 100vh;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  // background-color: var(--background-main);
 
   &_container {
     width: 50px;
