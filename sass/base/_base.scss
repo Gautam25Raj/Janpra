@@ -37,8 +37,36 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@include respond(1700) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@include respond(1550) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@include respond(1400) {
+  html {
+    font-size: 46.875%;
+  }
+}
+
+@include respond(1100) {
+  html {
+    font-size: 42%;
+  }
 }
