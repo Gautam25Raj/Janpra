@@ -7,7 +7,28 @@
 }
 
 .body {
-  grid-template-rows: auto 145px auto 145px auto;
+  grid-template-rows: repeat(auto, 3);
+}
+
+.main-grid {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  grid-template-rows: 145px auto auto;
+}
+
+.grid-header {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  grid-template-rows: auto auto;
+  background-color: var(--background-main);
+}
+
+.product-grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin-bottom: 60px;
 }
 
 .footer {
