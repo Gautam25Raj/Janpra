@@ -13,6 +13,18 @@
   box-sizing: border-box;
 }
 
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  // scroll-behavior: smooth;
+  // cursor: default;
+}
+
 body {
   font-family: 'Arial';
 }
