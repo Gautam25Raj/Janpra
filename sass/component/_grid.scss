@@ -26,9 +26,9 @@
 .product-grid {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  margin-bottom: 60px;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+  margin-bottom: 6rem;
 }
 
 .footer {

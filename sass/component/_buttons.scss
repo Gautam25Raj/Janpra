@@ -1,13 +1,13 @@
 .btn {
-  font-size: 30px;
+  font-size: 3rem;
   border-radius: 100px;
-  padding: 16px 30px;
+  padding: 1.6rem 3rem;
   background-color: var(--background-dark);
   border: none;
 
   &-arrow {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     margin-left: 20px;
   }
 }
