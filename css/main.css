@@ -65,30 +65,40 @@
 @media only screen and (max-width: 800px) {
   .home_nav_main {
     grid-column: 1/5;
-    grid-row: 1/2;
-    z-index: 10; }
+    margin: 0 4rem; }
   .home_nav-logo {
-    height: 15rem;
-    width: 15rem; }
+    height: 16rem;
+    width: 16rem; }
   .header-heading {
     grid-column: 1/5;
     grid-row: 2/3;
-    margin-top: 11.5rem; }
-    .header-heading p {
-      margin-bottom: 7.2rem;
-      max-width: 46.5rem; }
+    margin: 8rem 0 0;
+    justify-self: center; }
     .header-heading button {
-      margin-bottom: 5.4rem; }
+      margin-bottom: 10rem; }
   .header-image {
     grid-column: 1/5;
-    grid-row: 3/4;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    z-index: 8; }
+    grid-row: 3/4; }
     .header-image img {
       position: absolute;
-      bottom: -6px; } }
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .header-p {
+    font-size: calc(0.5vw + 2rem); } }
+
+@media only screen and (max-width: 500px) {
+  .header-heading {
+    width: 95%; }
+    .header-heading p {
+      max-width: none;
+      font-size: calc(2vw + 1rem);
+      margin-bottom: 5rem; }
+    .header-heading button {
+      margin: 0 auto 6rem; }
+  .header-image {
+    width: 98%;
+    margin: 0 auto; } }
 
 .color {
   grid-column: 1/13;
@@ -160,36 +170,26 @@
 
 @media only screen and (max-width: 800px) {
   .color {
-    grid-column: 1/5;
-    z-index: -1;
-    background-color: var(--background-main); }
-    .color-1 {
-      grid-row: 1/2; }
-    .color-2 {
-      grid-row: 4/5; }
+    grid-column: 1/5; }
   .about {
-    grid-row: 1/3;
     grid-column: 1/5;
-    border-radius: 50px;
-    padding: 6rem 8rem;
-    background-image: linear-gradient(rgba(251, 255, 242, 0.9) 100%, rgba(251, 255, 242, 0.9) 100%), url(../../../img/home/medicine-background.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: 11; }
-    .about-head {
-      margin: 0 0 5rem 5rem; }
-    .about_details {
-      display: flex;
-      justify-content: space-between; }
-      .about_details-photo {
-        width: 40%; }
-      .about_details_container {
-        width: 51%; }
-      .about_details-paragraph {
-        line-height: 3.6rem; }
-    .about-btn {
-      margin-top: 6rem; } }
+    width: 90%;
+    margin: 0 auto; }
+    .about_details-photo {
+      width: 60%; }
+    .about_details_container {
+      width: 100%; } }
+
+@media only screen and (max-width: 500px) {
+  .about {
+    width: 95%;
+    padding: 5rem 2rem;
+    background-size: 250%;
+    background-position: bottom center; }
+    .about_details-photo {
+      width: 95%; }
+    .about_details_container {
+      width: 100%; } }
 
 .products {
   grid-row: 3/4;
@@ -237,28 +237,18 @@
   .products {
     grid-row: 3/4;
     grid-column: 1/5;
-    background-image: url(../../../img/product/background-svg.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transform: translateY(-14.5rem);
-    z-index: -1; }
-    .products-h2 {
-      margin: 23.5rem 0 7rem; }
-    .products-btn {
-      margin: 0 auto; }
+    padding: 20px 10px 10px; }
+    .products img {
+      width: 70%; }
   .product_container {
-    width: 83.3%;
-    margin: 0 auto;
-    text-align: center; }
-  .product {
-    background-color: var(--background-main);
-    padding: 30px 15px 20px;
-    border-radius: 20px;
-    flex-direction: column; }
-    .product-h3 {
-      margin-bottom: 10px; }
-    .product-p {
-      margin-bottom: 20px; }
-  .product-background {
-    grid-row: 3/4; } }
+    width: 95%; } }
+
+@media only screen and (max-width: 500px) {
+  .products {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    padding: 20px 10px 10px; }
+    .products img {
+      width: 70%; }
+  .product_container {
+    width: 95%; } }

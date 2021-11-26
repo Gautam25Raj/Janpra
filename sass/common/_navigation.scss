@@ -36,3 +36,15 @@
     margin-right: 60px;
   }
 }
+
+@include respond(800) {
+  .nav_list:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@include respond(500) {
+  .home_nav_main {
+    display: none;
+  }
+}

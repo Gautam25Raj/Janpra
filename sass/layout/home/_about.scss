@@ -112,57 +112,40 @@
 @include respond(800) {
   .color {
     grid-column: 1/5;
-    z-index: -1;
-    background-color: var(--background-main);
-
-    &-1 {
-      grid-row: 1/2;
-    }
-
-    &-2 {
-      grid-row: 4/5;
-    }
   }
 
   .about {
-    grid-row: 1/3;
     grid-column: 1/5;
-    border-radius: 50px;
-    padding: 6rem 8rem;
-    background-image: linear-gradient(
-        rgba(251, 255, 242, 0.9) 100%,
-        rgba(251, 255, 242, 0.9) 100%
-      ),
-      url(../../../img/home/medicine-background.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: 11;
-
-    &-head {
-      margin: 0 0 5rem 5rem;
-    }
+    width: 90%;
+    margin: 0 auto;
 
     &_details {
-      display: flex;
-      justify-content: space-between;
-
       &-photo {
-        width: 40%;
+        width: 60%;
       }
 
       &_container {
-        width: 51%;
-        // margin-left: 13.5rem;
-      }
-
-      &-paragraph {
-        line-height: 3.6rem;
+        width: 100%;
       }
     }
+  }
+}
 
-    &-btn {
-      margin-top: 6rem;
+@include respond(500) {
+  .about {
+    width: 95%;
+    padding: 5rem 2rem;
+    background-size: 250%;
+    background-position: bottom center;
+
+    &_details {
+      &-photo {
+        width: 95%;
+      }
+
+      &_container {
+        width: 100%;
+      }
     }
   }
 }

@@ -76,3 +76,19 @@
     }
   }
 }
+
+@include respond(800) {
+  .head {
+    &-h1 {
+      font-size: calc(4vw + 3rem);
+    }
+  }
+}
+
+@include respond(500) {
+  .head {
+    &-h1 {
+      font-size: calc(8vw + 0.6rem);
+    }
+  }
+}

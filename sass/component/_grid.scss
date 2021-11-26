@@ -46,39 +46,30 @@
 
 @include respond(800) {
   .grid {
-    width: 100%;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-  }
-
-  .body {
-    grid-template-rows: repeat(auto, 3);
   }
 
   .main-grid {
     grid-column: 1/5;
-    grid-row: 2/3;
-    grid-template-rows: 145px auto auto;
   }
 
   .grid-header {
     grid-column: 1/5;
-    grid-row: 1/2;
     grid-template-rows: auto auto 300px;
-    background-color: var(--background-main);
   }
 
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    grid-column-gap: 5rem;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 4rem;
     grid-row-gap: 5rem;
     margin-bottom: 6rem;
   }
+}
 
-  .footer {
-    grid-template-rows: auto;
+@include respond(500) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, repeat);
   }
 }

@@ -11,3 +11,14 @@
     margin-left: 2rem;
   }
 }
+
+@include respond(500) {
+  .btn {
+    font-size: 2.6rem;
+
+    &-arrow {
+      width: 2.6rem;
+      height: 2.6rem;
+    }
+  }
+}

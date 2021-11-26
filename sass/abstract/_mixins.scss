@@ -44,4 +44,10 @@
       @content;
     }
   }
+
+  @if $breakpoint == 500 {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
 }
