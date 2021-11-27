@@ -4,6 +4,10 @@
 //   grid-column: 1/13;
 // }
 
+.home-header {
+  background-color: var(--background-main);
+}
+
 .home_nav {
   display: flex;
   justify-content: space-between;

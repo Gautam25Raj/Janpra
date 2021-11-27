@@ -10,17 +10,16 @@
   grid-template-rows: repeat(auto, 3);
 }
 
-.main-grid {
-  grid-column: 1/13;
-  grid-row: 2/3;
-  grid-template-rows: 145px auto auto;
-}
-
 .grid-header {
   grid-column: 1/13;
   grid-row: 1/2;
   grid-template-rows: auto auto;
-  background-color: var(--background-main);
+}
+
+.main-grid {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  grid-template-rows: 145px auto auto;
 }
 
 .product-grid {
@@ -55,6 +54,9 @@
 
   .grid-header {
     grid-column: 1/5;
+  }
+
+  .home-header {
     grid-template-rows: auto auto 300px;
   }
 
