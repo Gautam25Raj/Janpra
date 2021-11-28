@@ -12,6 +12,10 @@
   }
 }
 
+.home-main-grid {
+  grid-template-rows: 145px auto auto;
+}
+
 .about {
   grid-row: 1/3;
   grid-column: 2/12;

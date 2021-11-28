@@ -20,7 +20,7 @@
   <body class="grid">
     <section class="social center">
       <!-- SOCIAL -->
-      <ul class="socials">
+      <ul class="socials maximum-width">
         <li class="social_container">
           <a href="#"
             ><img
@@ -59,35 +59,222 @@
       </ul>
     </section>
 
-    <header class="grid grid-header">
+    <article class="grid grid-header">
       <nav class="nav_main">
-        <div class="nav grid">
+        <div class="nav grid maximum-width">
           <div class="nav-logo">
-            <img src="img/common/Janpra-Logo.svg" alt="Janpra Logo" />
+            <picture>
+              <source
+                srcset="img/janpra-logo.svg"
+                type="image/webp"
+                media="(max-width:800px)"
+              />
+              <source
+                srcset="img/common/Janpra-Logo.svg"
+                type="image/png"
+                media="(min-width:800px)"
+              />
+              <img src="img/common/Janpra-Logo.svg" alt="Happen Icon LogoM" />
+            </picture>
           </div>
 
           <ul class="nav_container">
             <li class="nav_list">
-              <a href="#" class="paragraph paragraph-big">Home</a>
+              <a href="/" class="paragraph paragraph-big">Home</a>
             </li>
             <li class="nav_list">
-              <a href="#" class="paragraph paragraph-big">About</a>
+              <a href="about.html" class="paragraph paragraph-big">About</a>
             </li>
             <li class="nav_list">
-              <a href="#" class="paragraph paragraph-big">Product</a>
+              <a href="product.html" class="paragraph paragraph-big">Product</a>
             </li>
             <li class="nav_list">
-              <a href="#" class="paragraph paragraph-big">Contact</a>
+              <a href="contact.html" class="paragraph paragraph-big">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
 
-    <main class="main grid"></main>
+      <section class="product_header maximum-width">
+        <header class="product-header">
+          <h1 class="product-head">Care for your Skin, care for your beauty</h1>
+          <div class="product-paragraph">
+            <p class="paragraph paragraph-small">
+              Skin is one of the largest organs of the body. Your skin acts as a
+              protective shield.
+            </p>
+            <br />
+            <br />
+            <p class="paragraph paragraph-small">
+              If your skin protects you, then who will protect your skin? We
+              will.
+            </p>
+          </div>
+          <a href="#" class="product-link">View All Products</a>
+        </header>
+
+        <div class="product_header-img">
+          <img src="img/product/Product-showcase.png" alt="" />
+        </div>
+      </section>
+    </article>
+
+    <main class="grid main-grid maximum-width">
+      <article class="products">
+        <h2 class="head-h2 products-head">OUR PRODUCTS</h2>
+        <section class="grid product-grid">
+          <section class="product">
+            <div class="product-img">
+              <img
+                src="img/product/Denblok-shampoo.png"
+                alt="Denblok Shampoo Product Image"
+              />
+            </div>
+            <div class="product_details center">
+              <h3 class="head-h3 product_details-h3">Denblok Shampoo</h3>
+              <p class="paragraph paragraph-small product_details-p">
+                For Dandruff Free Hair
+              </p>
+              <button class="btn center product-btn">
+                <span>Read More</span>
+                <span class="btn-arrow"
+                  ><img src="img/common/button-arrow.svg" alt=""
+                /></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="product">
+            <div class="product-img">
+              <img
+                src="img/product/Hairjan-tablets.png"
+                alt="Denblok Shampoo Product Image"
+              />
+            </div>
+            <div class="product_details center">
+              <h3 class="head-h3 product_details-h3">Hairjan Tablets</h3>
+              <p class="paragraph paragraph-small product_details-p">
+                Give Strenght to avoid Hairloss.
+              </p>
+              <button class="btn center product-btn">
+                <span>Read More</span>
+                <span class="btn-arrow"
+                  ><img src="img/common/button-arrow.svg" alt=""
+                /></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="product">
+            <div class="product-img">
+              <img
+                src="img/product/Glutapra-tablets.png"
+                alt="Denblok Shampoo Product Image"
+              />
+            </div>
+            <div class="product_details center">
+              <h3 class="head-h3 product_details-h3">Glutapra</h3>
+              <p class="paragraph paragraph-small product_details-p">
+                For the Glowing and Beautiful Skin
+              </p>
+              <button class="btn center product-btn">
+                <span>Read More</span>
+                <span class="btn-arrow"
+                  ><img src="img/common/button-arrow.svg" alt=""
+                /></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="product">
+            <div class="product-img">
+              <img
+                src="img/product/Crystagold-serum.png"
+                alt="Denblok Shampoo Product Image"
+              />
+            </div>
+            <div class="product_details center">
+              <h3 class="head-h3 product_details-h3">Crystaldold - C</h3>
+              <p class="paragraph paragraph-small product_details-p">
+                Gives your skin a Youthful grow
+              </p>
+              <button class="btn center product-btn">
+                <span>Read More</span>
+                <span class="btn-arrow"
+                  ><img src="img/common/button-arrow.svg" alt=""
+                /></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="product">
+            <div class="product-img">
+              <img
+                src="img/product/CBsoft-S.png"
+                alt="Denblok Shampoo Product Image"
+              />
+            </div>
+            <div class="product_details center">
+              <h3 class="head-h3 product_details-h3">CBsoft - S</h3>
+              <p class="paragraph paragraph-small product_details-p">
+                Delivers Results & Compilance Together
+              </p>
+              <button class="btn center product-btn">
+                <span>Read More</span>
+                <span class="btn-arrow"
+                  ><img src="img/common/button-arrow.svg" alt=""
+                /></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="product">
+            <div class="product-img">
+              <img
+                src="img/product/KTjan-bodywash.png"
+                alt="Denblok Shampoo Product Image"
+              />
+            </div>
+            <div class="product_details center">
+              <h3 class="head-h3 product_details-h3">KTjan Body Wash</h3>
+              <p class="paragraph paragraph-small product_details-p">
+                Tested & Trusted Anti Fungal
+              </p>
+              <button class="btn center product-btn">
+                <span>Read More</span>
+                <span class="btn-arrow"
+                  ><img src="img/common/button-arrow.svg" alt=""
+                /></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="product">
+            <div class="product-img">
+              <img
+                src="img/product/Lulipra-cream.png"
+                alt="Denblok Shampoo Product Image"
+              />
+            </div>
+            <div class="product_details center">
+              <h3 class="head-h3 product_details-h3">Lulipra Cream</h3>
+              <p class="paragraph paragraph-small product_details-p">
+                Cleans & Controls Fungal Infections
+              </p>
+              <button class="btn center product-btn">
+                <span>Read More</span>
+                <span class="btn-arrow"
+                  ><img src="img/common/button-arrow.svg" alt=""
+                /></span>
+              </button>
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
 
     <footer>
-      <section class="grid footer">
+      <section class="grid footer maximum-width">
         <section class="footer_details">
           <div class="footer_details-logo">
             <img src="img/janpra-logo.svg" alt="Janpra Logo" />
@@ -121,16 +308,20 @@
           <ul>
             <li class="paragraph paragraph-bold footer_nav-head">Explore</li>
             <li class="footer_nav-link">
-              <a href="#" class="paragraph paragraph-small">Home</a>
+              <a href="/" class="paragraph paragraph-small">Home</a>
             </li>
             <li class="footer_nav-link">
-              <a href="#" class="paragraph paragraph-small">About</a>
+              <a href="about.html" class="paragraph paragraph-small">About</a>
             </li>
             <li class="footer_nav-link">
-              <a href="#" class="paragraph paragraph-small">Product</a>
+              <a href="product.html" class="paragraph paragraph-small"
+                >Product</a
+              >
             </li>
             <li class="footer_nav-link">
-              <a href="#" class="paragraph paragraph-small">Contact</a>
+              <a href="contact.html" class="paragraph paragraph-small"
+                >Contact</a
+              >
             </li>
           </ul>
 

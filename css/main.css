@@ -112,6 +112,9 @@
   .color-2 {
     grid-row: 4/5; }
 
+.home-main-grid {
+  grid-template-rows: 145px auto auto; }
+
 .about {
   grid-row: 1/3;
   grid-column: 2/12;
@@ -206,7 +209,7 @@
   .products-h2 {
     margin: 23.5rem 0 7rem; }
   .products-btn {
-    margin: 0 auto; }
+    margin: 6rem auto 0; }
 
 .product_container {
   width: 83.3%;

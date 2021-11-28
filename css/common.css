@@ -5,7 +5,9 @@
   --background-dark: #baf05e;
   --background-about-us: rgba(251, 255, 242, 0.1);
   --text-header: #20026f;
-  --text-paragraph: #3b1997; }
+  --text-paragraph: #3b1997;
+  --box-shadow-container: 0 0 8px 2px rgba(0, 0, 0, 0.25);
+  --box-shadow-product: 4px 4px 4px 0 rgba(0, 0, 0, 0.25); }
 
 @font-face {
   font-family: 'Roboto';
@@ -28,7 +30,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Arial'; }
+  font-family: 'Arial';
+  background-color: #fafafb;
+  justify-content: center; }
 
 a {
   text-decoration: none; }
@@ -137,7 +141,9 @@ img {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 0px; }
+  grid-row-gap: 0px;
+  max-width: 1920px;
+  margin: 0 auto; }
 
 .body {
   grid-template-rows: repeat(auto, 3); }
@@ -149,18 +155,21 @@ img {
 
 .main-grid {
   grid-column: 1/13;
-  grid-row: 2/3;
-  grid-template-rows: 145px auto auto; }
+  grid-row: 2/3; }
 
 .product-grid {
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   grid-column-gap: 5rem;
-  grid-row-gap: 5rem;
-  margin-bottom: 6rem; }
+  grid-row-gap: 5rem; }
 
 .footer {
   grid-template-rows: auto; }
+
+@media only screen and (max-width: 950px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem; } }
 
 @media only screen and (max-width: 800px) {
   .grid {
@@ -172,11 +181,11 @@ img {
   .home-header {
     grid-template-rows: auto auto 300px; }
   .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-column-gap: 4rem;
-    grid-row-gap: 5rem;
-    margin-bottom: 6rem; } }
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media only screen and (max-width: 500px) {
   .product-grid {
@@ -361,14 +370,19 @@ footer {
       max-width: 300px; } }
 
 @media only screen and (max-width: 800px) {
-  .nav-logo {
-    grid-column: 1/4;
-    padding: 0.5rem 0; }
-    .nav-logo img {
-      min-width: 260px; }
-  .nav_container {
-    grid-column: 8/13;
-    display: none; } }
+  .nav_main {
+    grid-column: 1/5; }
+  .nav {
+    grid-column: 1/5; }
+    .nav-logo {
+      grid-column: 1/2;
+      padding: 0;
+      justify-self: center; }
+      .nav-logo img {
+        min-width: none;
+        max-width: 100px; }
+    .nav_container {
+      display: none; } }
 
 @media only screen and (max-width: 500px) {
   .home_nav_main {
