@@ -63,7 +63,19 @@
       <nav class="nav_main">
         <div class="nav grid">
           <div class="nav-logo">
-            <img src="img/common/Janpra-Logo.svg" alt="Janpra Logo" />
+            <picture>
+              <source
+                srcset="img/janpra-logo.svg"
+                type="image/webp"
+                media="(max-width:800px)"
+              />
+              <source
+                srcset="img/common/Janpra-Logo.svg"
+                type="image/png"
+                media="(min-width:800px)"
+              />
+              <img src="img/common/Janpra-Logo.svg" alt="Happen Icon LogoM" />
+            </picture>
           </div>
 
           <ul class="nav_container">

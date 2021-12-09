@@ -48,6 +48,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4rem;
   }
+
+  .grid-value {
+    grid-column-gap: 12rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 @include respond(800) {
