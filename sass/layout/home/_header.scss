@@ -8,6 +8,10 @@
   background-color: var(--background-main);
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .home_nav {
   display: flex;
   justify-content: space-between;
@@ -108,7 +112,12 @@
 }
 
 @include respond(800) {
+  .mobile-nav {
+    display: block;
+  }
+
   .home_nav {
+    display: none;
     &_main {
       grid-column: 1/5;
       margin: 0 4rem;

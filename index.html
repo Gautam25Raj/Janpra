@@ -62,6 +62,48 @@
     <article class="grid grid-header home-header">
       <!-- <section class="container grid">
         <header class="grid header"> -->
+
+      <nav class="nav_main mobile-nav">
+        <div class="nav grid">
+          <div class="nav-logo">
+            <picture>
+              <source
+                srcset="img/janpra-logo.svg"
+                type="image/webp"
+                media="(max-width:800px)"
+              />
+              <source
+                srcset="img/common/Janpra-Logo.svg"
+                type="image/png"
+                media="(min-width:800px)"
+              />
+              <img src="img/common/Janpra-Logo.svg" alt="Happen Icon LogoM" />
+            </picture>
+          </div>
+
+          <ul class="nav_container">
+            <li class="nav_list">
+              <a href="/" class="paragraph paragraph-big">Home</a>
+            </li>
+            <li class="nav_list">
+              <a href="about.html" class="paragraph paragraph-big">About</a>
+            </li>
+            <li class="nav_list">
+              <a href="product.html" class="paragraph paragraph-big">Product</a>
+            </li>
+            <li class="nav_list">
+              <a href="contact.html" class="paragraph paragraph-big">Contact</a>
+            </li>
+          </ul>
+
+          <div class="burger">
+            <div class="burger-line1"></div>
+            <div class="burger-line2"></div>
+            <div class="burger-line3"></div>
+          </div>
+        </div>
+      </nav>
+
       <nav class="home_nav_main">
         <div class="home_nav">
           <div class="home_nav-logo">
@@ -92,6 +134,12 @@
               >
             </li>
           </ul>
+
+          <div class="burger">
+            <div class="burger-line1"></div>
+            <div class="burger-line2"></div>
+            <div class="burger-line3"></div>
+          </div>
         </div>
       </nav>
 
@@ -103,7 +151,10 @@
         <p class="paragraph paragraph-mid header-p">
           At Janpra Pharma, We Create what you need for your happiness.
         </p>
-        <button class="btn center header-btn">
+        <button
+          onclick="window.location.href = 'contact.html';"
+          class="btn center header-btn"
+        >
           <span> Contact </span>
           <span class="btn-arrow">
             <img src="img/common/button-arrow.svg" alt="" />
@@ -151,7 +202,10 @@
               good health, to build the best product, to work hard every day.
             </p>
 
-            <button class="btn center about-btn">
+            <button
+              onclick="window.location.href = 'about.html';"
+              class="btn center about-btn"
+            >
               <span class="paragraph paragraph-big">About</span>
               <span class="btn-arrow">
                 <img src="img/common/button-arrow.svg" alt="" />
@@ -230,7 +284,10 @@
             </div>
           </section>
 
-          <button class="btn center products-btn">
+          <button
+            onclick="window.location.href = 'product.html';"
+            class="btn center products-btn"
+          >
             <span>More Product</span>
             <span class="btn-arrow"
               ><img src="img/common/button-arrow.svg" alt=""
@@ -330,5 +387,7 @@
         Copyright © 2021Janta Pharma | All Rights Reserved
       </section>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

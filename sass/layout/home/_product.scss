@@ -6,7 +6,7 @@
   background-position: center;
   background-size: cover;
   transform: translateY(-14.5rem);
-  z-index: -1;
+  // z-index: -1;
 
   &-h2 {
     margin: 23.5rem 0 7rem;
@@ -14,6 +14,7 @@
 
   &-btn {
     margin: 6rem auto 0;
+    z-index: 99999;
   }
 }
 
