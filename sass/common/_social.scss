@@ -41,7 +41,7 @@
     transform: translateY(0) translateX(150%);
     display: flex;
     transition: transform 0.5s ease-in;
-    // display: none;
+    display: none;
   }
 
   .social {
@@ -60,4 +60,5 @@
 
 .open_socials {
   transform: translateY(0) translateX(-50%);
+  display: flex;
 }

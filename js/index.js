@@ -11,4 +11,12 @@ const navSlide = () => {
   });
 };
 
+const loading = () => {
+  window.addEventListener('load', () => {
+    const preload = document.querySelector('.preload');
+    preload.classList.add('preload-finish');
+  });
+};
+
 navSlide();
+loading();

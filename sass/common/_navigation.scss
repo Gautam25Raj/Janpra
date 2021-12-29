@@ -109,15 +109,14 @@
     }
 
     &_container {
-      // display: none;
+      display: none;
       position: absolute;
       top: 0;
       height: 100vh;
-      width: 100%;
+      width: 100vw;
       z-index: 100;
       flex-direction: column;
       align-items: center;
-      // justify-content: center;
       transform: translateX(100%);
       background-color: var(--background-main);
       transition: transform 0.5s ease-in;
@@ -145,12 +144,7 @@
   }
 }
 
-@include respond(500) {
-  .home_nav_main {
-    display: none;
-  }
-}
-
 .open_burger {
+  display: flex;
   transform: translateX(0%);
 }
