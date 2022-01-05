@@ -47,7 +47,7 @@
     font-size: 2.4rem;
 
     &-small {
-      font-size: 2.3rem;
+      font-size: 2.4rem;
     }
 
     &-med {
@@ -56,14 +56,6 @@
 
     &-big {
       font-size: 2.8rem;
-    }
-  }
-}
-
-@include respond(1300) {
-  .paragraph {
-    &-small {
-      font-size: 2.4rem;
     }
   }
 }

@@ -9,6 +9,7 @@
     "product:sass": "node-sass sass/product.scss css/product.css -w",
     "contact:sass": "node-sass sass/contact.scss css/contact.css -w",
     "common:sass": "node-sass sass/common.scss css/common.css -w",
+    "products:sass": "node-sass sass/products.scss css/products.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "about": "npm-run-all --parallel devserver about:sass",

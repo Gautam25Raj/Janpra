@@ -3,6 +3,8 @@
   --background-light: #fbfff2;
   --background-mid: #c3ef79;
   --background-dark: #baf05e;
+  --color-icon: #81c214;
+  --product-line: #cecece;
   --background-about-us: rgba(251, 255, 242, 0.1);
   --text-header: #20026f;
   --text-paragraph: #3b1997;
@@ -174,15 +176,11 @@ img {
   .paragraph {
     font-size: 2.4rem; }
     .paragraph-small {
-      font-size: 2.3rem; }
+      font-size: 2.4rem; }
     .paragraph-med {
       font-size: 2.6rem; }
     .paragraph-big {
       font-size: 2.8rem; } }
-
-@media only screen and (max-width: 1300px) {
-  .paragraph-small {
-    font-size: 2.4rem; } }
 
 @media only screen and (max-width: 950px) {
   .head-h1 {
